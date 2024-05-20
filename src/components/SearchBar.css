@@ -1,0 +1,31 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+  .input-container {
+    position: relative;
+    flex-grow: 1;
+    input {
+      background-color: var(--dark-gray);
+      color: var(--white);
+      border: none;
+      outline: none;
+      line-height: 3rem;
+      padding-left: 2.5rem;
+      border-radius: 10rem;
+      width: 100%;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .search-icon {
+      left: 1rem;
+    }
+    .reset-icon {
+      right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.cdnfonts.com/css/circular-std");
+@font-face {
+  font-family: CircularSp;
+  src: url("https://encore.scdn.co/fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.woff2")
+      format("woff2"),
+    url("https://encore.scdn.co/fonts/CircularSp-Book-4f217aebee53ffc72f4444f79041ffa5.woff")
+      format("woff");
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0, U+D, U+20-7E, U+A0-17E, U+18F, U+192, U+1A0-1A1, U+1AF-1B0,
+    U+1B5-1B6, U+1C4-1C6, U+1F1-1F3, U+1FA-1FF, U+218-21B, U+237, U+259,
+    U+2BB-2BC, U+2C6-2C7, U+2C9, U+2D8-2DD, U+300-301, U+303, U+309, U+323,
+    U+394, U+3A9, U+3BC, U+3C0, U+1E80-1E85, U+1E8A-1E8B, U+1EA0-1EF9, U+1FD6,
+    U+2007-2008, U+200B, U+2010-2011, U+2013-2014, U+2018-201A, U+201C-201E,
+    U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2042, U+2044,
+    U+2051, U+2070, U+2074-2079, U+2080-2089, U+20AB-20AC, U+2113, U+2117,
+    U+2122, U+2126, U+2160-2169, U+216C-216F, U+2190-2193, U+2196-2199, U+21A9,
+    U+21B0-21B5, U+21C6, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
+    U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+22C5, U+24C5,
+    U+25A0-25A1, U+25AF, U+25B2-25B3, U+25CA-25CB, U+25CF, U+262E, U+2713,
+    U+2715, U+2780-2788, U+E000, U+E002, U+F6C3, U+FB00-FB04, U+FEFF, U+FF0C,
+    U+FF0E, U+FF1A-FF1B, U+FFFF;
+}
+@font-face {
+  font-family: CircularSp;
+  src: url("https://encore.scdn.co/fonts/CircularSp-Bold-fe1cfc14b7498b187c78fa72fb72d148.woff2")
+      format("woff2"),
+    url("https://encore.scdn.co/fonts/CircularSp-Bold-79ebb2bdea919cebedea4884d08c499e.woff")
+      format("woff");
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0, U+D, U+20-7E, U+A0-17E, U+18F, U+192, U+1A0-1A1, U+1AF-1B0,
+    U+1B5-1B6, U+1C4-1C6, U+1F1-1F3, U+1FA-1FF, U+218-21B, U+237, U+259,
+    U+2BB-2BC, U+2C6-2C7, U+2C9, U+2D8-2DD, U+300-301, U+303, U+309, U+323,
+    U+394, U+3A9, U+3BC, U+3C0, U+1E80-1E85, U+1E8A-1E8B, U+1EA0-1EF9, U+1FD6,
+    U+2007-2008, U+200B, U+2010-2011, U+2013-2014, U+2018-201A, U+201C-201E,
+    U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2042, U+2044,
+    U+2051, U+2070, U+2074-2079, U+2080-2089, U+20AB-20AC, U+2113, U+2117,
+    U+2122, U+2126, U+2160-2169, U+216C-216F, U+2190-2193, U+2196-2199, U+21A9,
+    U+21B0-21B5, U+21C6, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
+    U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+22C5, U+24C5,
+    U+25A0-25A1, U+25AF, U+25B2-25B3, U+25CA-25CB, U+25CF, U+262E, U+2713,
+    U+2715, U+2780-2788, U+E000, U+E002, U+F6C3, U+FB00-FB04, U+FEFF, U+FF0C,
+    U+FF0E, U+FF1A-FF1B, U+FFFF;
+}
+@font-face {
+  font-family: CircularSpTitle;
+  src: url("https://encore.scdn.co/fonts/CircularSpTitle-Bold-2fbf72b606d7f0b0f771ea4956a8b4d6.woff2")
+      format("woff2"),
+    url("https://encore.scdn.co/fonts/CircularSpTitle-Bold-7cd3208b73fd0850bca5d8f7821439cd.woff")
+      format("woff");
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0, U+20-7E, U+A0-BF, U+C6-C7, U+D0, U+D7, U+DE-E4, U+E6-EF,
+    U+F1-FF, U+101, U+103-105, U+107, U+109, U+10B, U+10D, U+10F-111, U+113,
+    U+115, U+117-119, U+11B, U+11D, U+11F, U+121, U+126-127, U+129, U+12B,
+    U+12D-12F, U+131-133, U+135, U+138, U+13E-142, U+144, U+148, U+14A-14B,
+    U+14D, U+14F, U+151-153, U+155, U+159, U+15B, U+15D-15F, U+161-163,
+    U+166-167, U+169, U+16B, U+16D, U+171-173, U+175, U+177, U+17A, U+17C, U+17E,
+    U+18F, U+192, U+1A1, U+1B0, U+1B5-1B6, U+1C5-1C6, U+1F1-1F3, U+1FD, U+1FF,
+    U+237, U+259, U+2C6-2C7, U+2C9, U+2D8-2D9, U+2DB-2DD, U+394, U+3A9, U+3BC,
+    U+3C0, U+1E81, U+1E83, U+1E85, U+1E8B, U+1EA0-1EA1, U+1EAD, U+1EB7-1EB9,
+    U+1EBD, U+1EC7, U+1ECA-1ECD, U+1ED9, U+1EDB, U+1EDD, U+1EE3-1EE5, U+1EE9,
+    U+1EEB, U+1EF1, U+1EF3-1EF5, U+1EF9, U+1FD6, U+2007-2008, U+200B,
+    U+2010-2011, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026,
+    U+2030, U+2032-2033, U+2039-203A, U+2042, U+2044, U+2051, U+2070,
+    U+2074-2079, U+2080-2089, U+20AB-20AC, U+2113, U+2117, U+2122, U+2126,
+    U+2160-2169, U+216C-216F, U+2190-2193, U+2196-2199, U+21A9, U+21B0-21B5,
+    U+21C6, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219, U+221E, U+222B,
+    U+2248, U+2260, U+2264-2265, U+22C5, U+24C5, U+25A0-25A1, U+25AF,
+    U+25B2-25B3, U+25CA-25CB, U+25CF, U+262E, U+2713, U+2715, U+2780-2788,
+    U+E000, U+E002, U+FB00-FB04, U+FEFF, U+FF0C, U+FF0E, U+FF1A-FF1B, U+FFFF;
+}
+
+:root {
+  --black: hsl(0, 0%, 0%);
+  --very-dark-gray: hsl(0, 0%, 7%);
+  --dark-gray: hsl(0, 0%, 14%);
+  --dark-gray-over: hsl(0, 0%, 16%);
+  --gray: hsl(0, 0%, 70%);
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(141, 73%, 42%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "CircularSp", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "CircularSpTitle", sans-serif;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.container {
+  width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+.btn {
+  line-height: 3rem;
+  background-color: var(--green);
+  color: var(--white);
+  padding-inline: 1.5rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  &.bottom {
+    margin-bottom: 1rem;
+    margin-left: auto;
+  }
+}

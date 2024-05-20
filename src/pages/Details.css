@@ -1,0 +1,10 @@
+.details {
+  position: relative;
+  padding-top: 1rem;
+  .back-link {
+    position: absolute;
+    font-size: 1.25rem;
+    top: 1rem;
+    left: 1rem;
+  }
+}

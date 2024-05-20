@@ -1,0 +1,67 @@
+.link-album {
+  overflow: hidden;
+}
+
+.card {
+  background-color: var(--dark-gray);
+  padding: 1rem;
+  border-radius: 1.5rem;
+
+  .card-info {
+    width: 100%;
+    display: grid;
+    gap: 0.5rem;
+
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 1rem;
+    .card-image {
+      border-radius: 0.5rem;
+    }
+    .card-album {
+      grid-column: 2 / 5;
+
+      .card-album-name {
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0.25rem;
+      }
+      .card-album-info {
+        font-size: 0.875rem;
+        span {
+          color: var(--gray);
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .card-body {
+    width: 100%;
+    .card-body-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-body-name {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-body-artist {
+      font-size: 0.875rem;
+      font-family: "CircularSp", sans-serif;
+      font-weight: 400;
+      span {
+        color: var(--gray);
+      }
+    }
+    .card-body-time {
+      font-size: 0.875rem;
+      color: var(--green);
+    }
+  }
+}
