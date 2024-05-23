@@ -40,9 +40,7 @@ function Artist({ token, artistImg }) {
             headers: { Authorization: "Bearer " + token },
           }
         );
-        const newItems = data.items.sort(
-          (a, b) => new Date(b.release_date) - new Date(a.release_date)
-        );
+        const newItems = data.items;
 
         setArtistDiscography((prev) => [...prev, ...newItems]);
 
