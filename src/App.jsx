@@ -6,16 +6,23 @@ import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Details from "./pages/Details";
-
+import Artist from "./pages/Artist";
 function App() {
   const [token, setToken] = useState("");
   const [result, setResult] = useState([]);
   const [value, setValue] = useState("");
-  const [trackId, setTrackId] = useState("ciao");
 
-  const handleTrackId = (id) => {
-    setTrackId(id);
-    console.log(trackId);
+  const [artistId, setArtistId] = useState("");
+  const [artistImg, setArtistImg] = useState("");
+
+  const handleArtistId = (id) => {
+    setArtistId(id);
+    console.log(artistId);
+  };
+
+  const handleArtistImg = (img) => {
+    setArtistImg(img);
+    console.log(artistImg);
   };
 
   useEffect(() => {
@@ -45,13 +52,26 @@ function App() {
               setValue={setValue}
               result={result}
               setResult={setResult}
-              handleTrackId={handleTrackId}
             ></Home>
           }
         ></Route>
         <Route
           path='/album/:id'
-          element={<Details token={token} trackId={trackId}></Details>}
+          element={
+            <Details
+              token={token}
+              artistId={artistId}
+              artistImg={artistImg}
+              handleArtistId={handleArtistId}
+              handleArtistImg={handleArtistImg}
+            ></Details>
+          }
+        ></Route>
+        <Route
+          path='/artist/:id'
+          element={
+            <Artist token={token} artistId={artistId} artistImg={artistImg} />
+          }
         ></Route>
       </Routes>
     </Router>

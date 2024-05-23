@@ -5,7 +5,7 @@
 .card {
   background-color: var(--dark-gray);
   padding: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 
   .card-info {
     width: 100%;
@@ -16,7 +16,7 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 1rem;
     .card-image {
-      border-radius: 0.5rem;
+      border-radius: 0rem;
     }
     .card-album {
       grid-column: 2 / 5;

@@ -18,6 +18,14 @@ function Home({ token, value, setValue, result, setResult, handleTrackId }) {
   };
 
   const handleOffset = () => setOffset(offset + 20);
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop + 1 >=
+      document.documentElement.offsetHeight
+    ) {
+      setOffset(offset + 20);
+    }
+  };
 
   useEffect(() => {
     if (value !== "") {
@@ -28,7 +36,7 @@ function Home({ token, value, setValue, result, setResult, handleTrackId }) {
           headers: { Authorization: "Bearer " + token },
         }
       ).then((data) => {
-        console.log(data.data.tracks.items);
+        console.log(data.data.tracks);
         setResult(data.data.tracks.items);
       });
     }
@@ -46,6 +54,10 @@ function Home({ token, value, setValue, result, setResult, handleTrackId }) {
         console.log(data.data.tracks.items);
         setResult((prev) => prev.concat(data.data.tracks.items));
       });
+      console.log(document.documentElement.scrollTop + window.innerHeight);
+      console.log(document.documentElement.offsetHeight);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
     }
   }, [offset]);
 

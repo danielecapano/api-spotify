@@ -1,10 +1,17 @@
 .details {
   position: relative;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   .back-link {
-    position: absolute;
-    font-size: 1.25rem;
+    position: fixed;
     top: 1rem;
     left: 1rem;
+    width: 1.75rem;
+    font-size: 1.25rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    z-index: 30;
   }
 }

@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-function Card({ item, handleTrackId }) {
+function Card({ item }) {
   const convertTime = (time) => {
     const totalSeconds = Math.floor(time / 1000);
     const minutes = Math.floor(totalSeconds / 60);
@@ -18,11 +18,7 @@ function Card({ item, handleTrackId }) {
 
   return (
     <Link className='link-album' to={`/album/${item.album.id}`}>
-      <div
-        key={item.id}
-        className='card'
-        onClick={() => handleTrackId(item.id)}
-      >
+      <div key={item.id} className='card'>
         <div className='card-info'>
           <img className='card-image' src={item.album.images[1].url}></img>
           <div className='card-album'>
